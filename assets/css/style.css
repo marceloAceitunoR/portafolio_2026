@@ -330,22 +330,220 @@ body::after {
     box-shadow: 0 0 15px #00ffff;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =========================================
+   RESPONSIVE - PORTAFOLIO 2026
+   ========================================= */
 
-@media (max-width: 768px) {
+/* Evita desplazamiento horizontal */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-    .terminal {
-        padding: 30px 15px;
+/* Imágenes siempre adaptables */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedores */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        min-height: auto;
+        padding: 100px 20px 60px;
     }
 
     .hero h1 {
-        font-size: 55px;
+        font-size: 3rem;
     }
 
-    .section {
-        padding: 70px 15px;
+    .hero p {
+        font-size: 1rem;
     }
 
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 25px;
+    }
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 90px 15px 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+
+    /* FOTO */
+
+    .hero img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin: 0 auto 25px;
+    }
+
+
+    /* BOTONES */
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    /* PROYECTOS */
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+
+
+    /* TECNOLOGÍAS */
+
+    .tech-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .tech-icons i {
+        font-size: 2rem;
+    }
+
+
+    /* CONTACTO */
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact p {
+        word-break: break-word;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.85rem;
+    }
+
+    .hero img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .tech-icons i {
+        font-size: 1.7rem;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
 }
